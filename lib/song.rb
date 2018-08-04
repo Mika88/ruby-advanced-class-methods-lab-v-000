@@ -44,8 +44,8 @@ class Song
   #splits it into name and artist_name
   #removes .mps
   #returnes new instance
-  def self.new_from_filename(filename)
+  def self.new_from_filename(song_string)
     song = self.new
-    filename.delete(".mp3").split(" - ")
+    song_string.delete(".mp3").split(" - ")
   end
 end
