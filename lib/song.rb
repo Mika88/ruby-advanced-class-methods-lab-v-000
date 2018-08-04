@@ -49,4 +49,3 @@ class Song
     filename.delete(".mp3").split("-")
   end
 end
-
