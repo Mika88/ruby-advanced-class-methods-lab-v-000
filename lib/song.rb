@@ -49,9 +49,9 @@ class Song
     song
   end
   def self.create_from_filename(song_string)
-    self.new_from_filename(song_string)
+    song = self.new
+    array = song_string.chomp(".mp3").split(" - ").each_with_index{|element, index| song.artist_name = element[0] && song.name = [1]}
     song.save
-    song
   end
 
 end
