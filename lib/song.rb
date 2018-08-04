@@ -46,6 +46,6 @@ class Song
   #returnes new instance
   def self.new_from_filename(filename)
     song = self.new
-    filename.delete(".mp3").split("-")
+    filename.delete(".mp3").split(" - ")
   end
 end
