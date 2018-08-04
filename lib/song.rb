@@ -46,7 +46,7 @@ class Song
   #returnes new instance
   def self.new_from_filename(song_string)
     song = self.new
-    array = song_string.delete(".mp3").split(" - ")
+    array = song_string.delete!(".mp3").split(" - ")
     song.artist_name = array[0]
     song.name = array[1]
     song
