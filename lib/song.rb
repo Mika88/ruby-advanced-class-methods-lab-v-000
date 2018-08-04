@@ -49,4 +49,3 @@ class Song
     song_string.delete(".mp3").split(" - ").each_with_index{|element, index| element[0] == song.artist_name && element[1] == song.name}
   end
 end
-binding.pry
