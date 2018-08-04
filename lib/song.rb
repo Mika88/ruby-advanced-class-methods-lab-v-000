@@ -40,10 +40,7 @@ class Song
   def self.alphabetical
     self.all.sort_by{|song| song.name}
   end
-  #recieves filename
-  #splits it into name and artist_name
-  #removes .mps
-  #returnes new instance
+  
   def self.new_from_filename(song_string)
     song = self.new
     array = song_string.chomp(".mp3").split(" - ")
