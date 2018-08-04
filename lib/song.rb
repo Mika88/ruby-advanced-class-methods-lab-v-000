@@ -49,5 +49,6 @@ class Song
     array = song_string.delete(".mp3").split(" - ")
     song.artist_name = array[0]
     song.name = array[1]
+    song
   end
 end
