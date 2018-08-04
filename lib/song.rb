@@ -55,7 +55,5 @@ class Song
     song.name = array[1]
     song.save
   end
- def self.destroy_all
-   self.all.delete
- end
+
 end
