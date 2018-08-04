@@ -49,3 +49,4 @@ class Song
     song_string.delete(".mp3").split(" - ")
   end
 end
+binding.pry
