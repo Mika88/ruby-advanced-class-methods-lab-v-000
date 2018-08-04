@@ -52,5 +52,6 @@ class Song
     self.new_from_filename(song_string)
     song.save
     song
+  end
 
 end
