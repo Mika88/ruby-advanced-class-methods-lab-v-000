@@ -46,6 +46,6 @@ class Song
   #returnes new instance
   def self.new_from_filename(song_string)
     song = self.new
-    song_string.delete(".mp3").split(" - ").each_with_index{|element, index| element[0] += song.artist_name && element[1] == song.name}
+    song_string.delete(".mp3").split(" - ").each_with_index{|element, index| element[0] == song.artist_name && element[1] == song.name}
   end
 end
